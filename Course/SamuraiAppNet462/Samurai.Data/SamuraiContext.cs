@@ -1,11 +1,11 @@
-﻿using SamuraiApp.Domain;
+﻿using Samurai.Domain;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SamuraiApp.Data
+namespace Samurai.Data
 {
 	public class SamuraiContext : DbContext
 	{
