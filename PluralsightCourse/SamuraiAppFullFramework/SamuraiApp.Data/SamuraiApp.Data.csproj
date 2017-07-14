@@ -41,6 +41,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SamuraiContext.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SamuraiApp.Domain\SamuraiApp.Domain.csproj">
+      <Project>{c96ed55f-0eb6-4888-956d-84cf592ed1b4}</Project>
+      <Name>SamuraiApp.Domain</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
