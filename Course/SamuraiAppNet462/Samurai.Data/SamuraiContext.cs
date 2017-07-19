@@ -1,6 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Samurai.Domain;
-using System.ComponentModel.DataAnnotations;
 
 namespace Samurai.Data
 {
@@ -29,7 +28,18 @@ namespace Samurai.Data
 			modelBuilder
 				.Entity<SamuraiBattle>()
 				.ToTable("SamuraisBattles")
-				.HasKey(s => new { s.SamuraiId, s.BattleId });
+				.HasKey(sb => new { sb.SamuraiId, sb.BattleId });
+
+			//In case we want to force a Samurai have a SecretIdentity.
+			//modelBuilder
+			//	.Entity<Domain.Samurai>()
+			//	.Property(s => s.SecretIdentity)
+			//	.IsRequired();
+
+			modelBuilder
+				.Entity<SecretIdentity>()
+				.Property(si => si.RealName)
+				.IsRequired();
 
 			base.OnModelCreating(modelBuilder);
 		}

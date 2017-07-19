@@ -1,37 +1,40 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
   <Class Name="Samurai.Domain.Samurai">
-    <Position X="2.75" Y="2.5" Width="2.25" />
+    <Position X="5.75" Y="2.5" Width="2.25" />
     <AssociationLine Name="Quotes" Type="Samurai.Domain.Quote" FixedFromPoint="true">
       <Path>
-        <Point X="5" Y="3.513" />
-        <Point X="6.75" Y="3.513" />
+        <Point X="8" Y="3.513" />
+        <Point X="9.75" Y="3.513" />
       </Path>
     </AssociationLine>
     <AssociationLine Name="SamuraiBattles" Type="Samurai.Domain.SamuraiBattle" FixedFromPoint="true">
       <Path>
-        <Point X="4.75" Y="4.247" />
-        <Point X="4.75" Y="5.5" />
+        <Point X="7.75" Y="4.247" />
+        <Point X="7.75" Y="5.5" />
       </Path>
       <MemberNameLabel ManuallyPlaced="true">
         <Position X="-2.515" Y="0.06" />
       </MemberNameLabel>
     </AssociationLine>
     <TypeIdentifier>
-      <HashCode>AAACAAAAAAAAAAAAAAAAAAQAgAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <HashCode>AAACAAAACAAAAAAAAAAAAAQAgAAAAAAAAAAAAAAAAAQ=</HashCode>
       <FileName>Samurai.cs</FileName>
     </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="SecretIdentity" />
+    </ShowAsAssociation>
     <ShowAsCollectionAssociation>
       <Property Name="Quotes" />
       <Property Name="SamuraiBattles" />
     </ShowAsCollectionAssociation>
   </Class>
   <Class Name="Samurai.Domain.Battle">
-    <Position X="2.5" Y="7.75" Width="2.75" />
+    <Position X="5.5" Y="7.75" Width="2.75" />
     <AssociationLine Name="BattleSamurais" Type="Samurai.Domain.SamuraiBattle" FixedFromPoint="true">
       <Path>
-        <Point X="4.75" Y="7.75" />
-        <Point X="4.75" Y="6.796" />
+        <Point X="7.75" Y="7.75" />
+        <Point X="7.75" Y="6.796" />
       </Path>
       <MemberNameLabel ManuallyPlaced="true">
         <Position X="-2.515" Y="0.07" />
@@ -46,7 +49,7 @@
     </ShowAsCollectionAssociation>
   </Class>
   <Class Name="Samurai.Domain.Quote">
-    <Position X="6.75" Y="2.5" Width="3" />
+    <Position X="9.75" Y="2.5" Width="3" />
     <TypeIdentifier>
       <HashCode>AAACAAAAAAAAAAAIAAAAAAAAAAEAAAAAAAAACAAAAAA=</HashCode>
       <FileName>Quote.cs</FileName>
@@ -56,17 +59,17 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="Samurai.Domain.SamuraiBattle">
-    <Position X="2.75" Y="5.5" Width="2.25" />
-    <AssociationLine Name="Battle" Type="Samurai.Domain.Battle" FixedToPoint="true">
-      <Path>
-        <Point X="3.125" Y="6.796" />
-        <Point X="3.125" Y="7.75" />
-      </Path>
-    </AssociationLine>
+    <Position X="5.75" Y="5.5" Width="2.25" />
     <AssociationLine Name="Samurai" Type="Samurai.Domain.Samurai" FixedToPoint="true">
       <Path>
-        <Point X="3.062" Y="5.5" />
-        <Point X="3.062" Y="4.247" />
+        <Point X="6.062" Y="5.5" />
+        <Point X="6.062" Y="4.247" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="Battle" Type="Samurai.Domain.Battle" FixedToPoint="true">
+      <Path>
+        <Point X="6.125" Y="6.796" />
+        <Point X="6.125" Y="7.75" />
       </Path>
     </AssociationLine>
     <TypeIdentifier>
@@ -74,7 +77,17 @@
       <FileName>SamuraiBattle.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
+      <Property Name="Samurai" />
       <Property Name="Battle" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Samurai.Domain.SecretIdentity">
+    <Position X="1.75" Y="2.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAIACAAAAAAAAEAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SecretIdentity.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
       <Property Name="Samurai" />
     </ShowAsAssociation>
   </Class>

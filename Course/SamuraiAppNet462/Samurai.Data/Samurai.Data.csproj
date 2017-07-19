@@ -196,6 +196,10 @@
     <Compile Include="Migrations\20170716034704_AddJoinTableSamuraisBattles.designer.cs">
       <DependentUpon>20170716034704_AddJoinTableSamuraisBattles.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\20170719041551_AddSecretIdentityTable.cs" />
+    <Compile Include="Migrations\20170719041551_AddSecretIdentityTable.designer.cs">
+      <DependentUpon>20170719041551_AddSecretIdentityTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\SamuraiContextModelSnapshot.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SamuraiContext.cs" />
