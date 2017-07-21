@@ -201,6 +201,7 @@
       <DependentUpon>20170719041551_AddSecretIdentityTable.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\SamuraiContextModelSnapshot.cs" />
+    <Compile Include="MyLoggerProvider.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SamuraiContext.cs" />
   </ItemGroup>

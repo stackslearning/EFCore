@@ -13,6 +13,8 @@ namespace Samurai.Data
 		{
 			var cnn = "Server=(localdb)\\mssqllocaldb;Database=SamuraiData;Trusted_Connection=True";
 			optionsBuilder.UseSqlServer(cnn);
+
+			optionsBuilder.EnableSensitiveDataLogging();
 		}
 
 		protected override void OnModelCreating(ModelBuilder modelBuilder)
